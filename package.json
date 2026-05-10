@@ -1,0 +1,42 @@
+{
+  "name": "vfile-reporter-codeclimate",
+  "version": "0.0.0",
+  "description": "Format VFile messages as a Code Climate report",
+  "keywords": [
+    "codeclimate",
+    "gitlab",
+    "reporter",
+    "vfile",
+    "vfile-reporter"
+  ],
+  "homepage": "https://github.com/remcohaszing/vfile-reporter-codeclimate#readme",
+  "bugs": "https://github.com/remcohaszing/vfile-reporter-codeclimate/issues",
+  "repository": "remcohaszing/vfile-reporter-codeclimate",
+  "funding": "https://github.com/sponsors/remcohaszing",
+  "license": "MIT",
+  "author": "Remco Haszing <remcohaszing@gmail.com>",
+  "type": "module",
+  "exports": "./dist/vfile-reporter-codeclimate.js",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "prepack": "tsc --build",
+    "pretest": "tsc --build",
+    "test": "c8 node --test"
+  },
+  "dependencies": {
+    "codeclimate-types": "^0.3.0",
+    "vfile": "^6.0.0"
+  },
+  "devDependencies": {
+    "@remcohaszing/eslint": "^14.0.0",
+    "c8": "^11.0.0",
+    "prettier": "^3.0.0",
+    "remark-cli": "^12.0.0",
+    "remark-preset-remcohaszing": "^3.0.0",
+    "typescript": "^6.0.0"
+  }
+}
